@@ -1,0 +1,27 @@
+vue-lazyload 生成全局指令
+Vue.use(Vue-lazyload,{
+    preLoad: 1.3,
+    error: "./static/error.png,
+    loading: "./static/loading.png",
+    attempt: 1
+})
+<img class="item-pic" v-lazy="newItem.picUrl"/>
+
+https://www.jianshu.com/p/f959366fadb8
+
+Axios  基于promise语法的http请求库
+Vue.prototype.$axios = axios;
+this.$axios.get()
+
+axios({
+    url,
+    data,
+    method
+})
+
+
+mandMobile  ui组件库
+
+VueClipboard 复制功能
+
+v-viewer 点击放大预览

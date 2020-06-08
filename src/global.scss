@@ -1,0 +1,125 @@
+@function vw($px){
+  @return  $px/750*100vw
+}
+$mainColor:#D52002;
+.main{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: constant(safe-area-inset-top)!important;
+  padding-bottom: constant(safe-area-inset-bottom)!important;
+  /* Status bar height on iOS 11+ */
+  padding-top: env(safe-area-inset-top)!important;
+  padding-bottom: env(safe-area-inset-bottom)!important;
+  box-sizing: border-box;
+  position: relative;
+
+}
+.main::before{
+  //content: '';
+  //background: $mainColor;
+}
+input{
+  outline: none;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.is-checked{
+  border-color: #FF3434;
+  color: #FF3434;
+  .md-tag {
+    .type-fill {
+      color: #fff;
+      background: $mainColor;
+    }
+    .default{
+      background: $mainColor;
+    }
+    .quarter-bg{
+      background: $mainColor!important;
+    }
+  }
+
+}
+
+
+.chek-peizhi {
+  font-size: 12px;
+  background: #fff
+}
+
+.chek-peizhi table {
+  width: 100%
+}
+
+.chek-peizhi th {
+  font-size: 14px;
+}
+
+.chek-peizhi th,.chek-peizhi td {
+  width: 50%;
+  text-align: left;
+  padding: 0;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 15px
+}
+
+.chek-peizhi th {
+  color: #666
+}
+
+.chek-peizhi td {
+  color: #333;
+  font-size: 12px
+}
+
+.chek-peizhi td h3 {
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  background: #f5f5f5;
+  font-size: 16px;
+  color: #828282
+}
+
+.chek-peizhi td h3 span {
+  padding: 0 0 0 15px
+}
+
+.chek-peizhi td.pd0 {
+  padding: 0;
+  border: 0
+}
+
+.chek-peizhi td.m-car-color li {
+  float: left;
+  width: 15px;
+  height: 8px;
+  border: 1px solid #E6E6E6;
+  padding: 1px;
+  margin: 1px 3px 1px 0
+}
+
+.chek-peizhi td.m-car-color li span {
+  width: 15px;
+  height: 8px;
+  display: block
+}
+
+.topZone .md-swiper-indicators {
+  bottom:48px
+}
+.topZone .md-swiper-indicators .md-swiper-indicator{
+  margin: 0 4px;
+  width: 12px;
+  height: 8px;
+  border-radius: 6px;
+  background: #fff;
+}
+.topZone .md-swiper-indicators .md-swiper-indicator-active{
+  width: 24px;
+}
