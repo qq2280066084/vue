@@ -9,7 +9,7 @@
     "te": "vue-cli-service build --mode te"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^3.3.2",
     "eslint-config-prettier": "^6.7.0",
     "fastclick": "^1.0.6",
